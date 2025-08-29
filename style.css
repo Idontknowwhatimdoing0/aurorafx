@@ -1,20 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: #111;
-    color: #eee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #111;
+  color: #eee;
 }
 
 canvas {
-    display: block;
-    margin: 10px auto;
-    border: 2px solid #eee;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #eee;
 }
 
 .controls {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 input[type=range] {
-    width: 200px;
+  width: 200px;
+}
+
+#video {
+  display: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.timeline {
+  margin-top: 10px;
+}
+
+#timeline {
+  width: 600px;
+}
+
+#timeDisplay {
+  margin-top: 5px;
 }
