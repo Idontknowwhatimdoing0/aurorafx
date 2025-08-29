@@ -10,8 +10,7 @@
 <body>
   <h1>AuroraFX Video Editor</h1>
 
-  <input type="file" id="videoUploader" accept="video/*">
-  <br><br>
+  <input type="file" id="videoUploader" accept="video/*"><br><br>
 
   <video id="video" controls></video>
   <canvas id="canvas" width="640" height="360"></canvas>
@@ -24,28 +23,58 @@
   <div class="controls">
     <h3>Visual Effects</h3>
     <label>Invert <input type="checkbox" id="invert"></label><br>
-    <label>Hue <input type="range" id="hue" min="0" max="360" value="0"></label><br>
+
+    <label>Hue <input type="range" id="hue" min="0" max="360" value="0">
+      <input type="number" id="hueNum" min="0" max="360" value="0"></label><br>
+
     <label>Hue Cycle <input type="checkbox" id="hueCycle"></label><br>
-    <label>Brightness <input type="range" id="brightness" min="-1" max="1" step="0.01" value="0"></label><br>
-    <label>Contrast <input type="range" id="contrast" min="0" max="3" step="0.01" value="1"></label><br>
-    <label>Saturation <input type="range" id="saturation" min="0" max="3" step="0.01" value="1"></label><br>
+
+    <label>Brightness <input type="range" id="brightness" min="-1" max="1" step="0.01" value="0">
+      <input type="number" id="brightnessNum" min="-1" max="1" step="0.01" value="0"></label><br>
+
+    <label>Contrast <input type="range" id="contrast" min="0" max="3" step="0.01" value="1">
+      <input type="number" id="contrastNum" min="0" max="3" step="0.01" value="1"></label><br>
+
+    <label>Saturation <input type="range" id="saturation" min="0" max="3" step="0.01" value="1">
+      <input type="number" id="saturationNum" min="0" max="3" step="0.01" value="1"></label><br>
+
     <label>Flip X <input type="checkbox" id="flipX"></label><br>
     <label>Flip Y <input type="checkbox" id="flipY"></label><br>
-    <label>Rotate <input type="range" id="rotate" min="0" max="360" value="0"></label><br>
-    <label>Swirl <input type="range" id="swirl" min="0" max="1" step="0.01" value="0"></label><br>
-    <label>Fisheye <input type="range" id="fisheye" min="0" max="1" step="0.01" value="0"></label><br>
+
+    <label>Rotate <input type="range" id="rotate" min="0" max="360" value="0">
+      <input type="number" id="rotateNum" min="0" max="360" value="0"></label><br>
+
+    <label>Swirl <input type="range" id="swirl" min="0" max="1" step="0.01" value="0">
+      <input type="number" id="swirlNum" min="0" max="1" step="0.01" value="0"></label><br>
+
+    <label>Fisheye <input type="range" id="fisheye" min="0" max="1" step="0.01" value="0">
+      <input type="number" id="fisheyeNum" min="0" max="1" step="0.01" value="0"></label><br>
+
     <label>LUT Filter <input type="file" id="lutFile" accept=".png"></label><br>
   </div>
 
   <div class="controls">
     <h3>Audio Effects</h3>
-    <label>Volume <input type="range" id="volume" min="0" max="2" step="0.01" value="1"></label><br>
-    <label>Speed <input type="range" id="speed" min="0.1" max="3" step="0.1" value="1"></label><br>
-    <label>Pitch <input type="range" id="pitch" min="0.5" max="2" step="0.01" value="1"></label><br>
+    <label>Volume <input type="range" id="volume" min="0" max="2" step="0.01" value="1">
+      <input type="number" id="volumeNum" min="0" max="2" step="0.01" value="1"></label><br>
+
+    <label>Speed <input type="range" id="speed" min="0.1" max="3" step="0.1" value="1">
+      <input type="number" id="speedNum" min="0.1" max="3" step="0.1" value="1"></label><br>
+
+    <label>Pitch <input type="range" id="pitch" min="0.5" max="2" step="0.01" value="1">
+      <input type="number" id="pitchNum" min="0.5" max="2" step="0.01" value="1"></label><br>
+
     <label>Reverse <input type="checkbox" id="reverseAudio"></label><br>
-    <label>Bass <input type="range" id="eqBass" min="0" max="2" step="0.01" value="1"></label><br>
-    <label>Mid <input type="range" id="eqMid" min="0" max="2" step="0.01" value="1"></label><br>
-    <label>Treble <input type="range" id="eqTreble" min="0" max="2" step="0.01" value="1"></label><br>
+
+    <label>Bass <input type="range" id="eqBass" min="0" max="2" step="0.01" value="1">
+      <input type="number" id="eqBassNum" min="0" max="2" step="0.01" value="1"></label><br>
+
+    <label>Mid <input type="range" id="eqMid" min="0" max="2" step="0.01" value="1">
+      <input type="number" id="eqMidNum" min="0" max="2" step="0.01" value="1"></label><br>
+
+    <label>Treble <input type="range" id="eqTreble" min="0" max="2" step="0.01" value="1">
+      <input type="number" id="eqTrebleNum" min="0" max="2" step="0.01" value="1"></label><br>
+
     <label>Audio Overlay <input type="file" id="audioOverlay" accept="audio/*"></label><br>
   </div>
 
